@@ -401,6 +401,10 @@ body {
   padding: 9.6rem 0;
 }
 
+.pricing-grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
 .pricing-plan {
   width: 75%;
   padding: 6.2rem;
