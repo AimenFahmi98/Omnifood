@@ -11,10 +11,61 @@
     font-size: 4.4rem;
   }
 
+  .section-testimonials {
+    column-gap: 9.6rem;
+  }
+
   .gallery {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.6rem;
-    padding: 1.6rem;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+    row-gap: 9.6rem;
+  }
+
+  .testimonial-img {
+    width: 6.8rem;
+    margin-bottom: 1.6rem;
+  }
+}
+
+/**********************************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**********************************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px */
+    font-size: 56.25%;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 3.6rem;
+  }
+
+  .grid {
+    row-gap: 6.4rem;
+    column-gap: 4.8rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .testimonials-container {
+    padding: 4.8rem;
   }
 }
