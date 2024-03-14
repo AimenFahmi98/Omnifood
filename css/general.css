@@ -191,6 +191,7 @@ Default: 0.9rem
 
 .list-item {
   font-size: 1.8rem;
+  line-height: 1.2;
   display: flex;
 
   align-items: center;
