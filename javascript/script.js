@@ -8,9 +8,9 @@ btnMobileNav.addEventListener("click", (e) => {
   headerNav.classList.toggle("nav-open");
 });
 
-/* 
-(Smartphones): Closing navigation when links are clicked 
-*/
+/**************************************************************
+ **  (Smartphones): Closing navigation when links are clicked
+ **************************************************************/
 const links = document.querySelectorAll("a:link");
 
 links.forEach((link) => {
@@ -20,6 +20,31 @@ links.forEach((link) => {
     }
   });
 });
+
+/**************************************************************
+ **  Sticky navigation
+ **************************************************************/
+const sectionHero = document.querySelector(".section-hero");
+const header = document.querySelector(".header");
+
+const obs = new IntersectionObserver(
+  (entries) => {
+    const ent = entries[0];
+    if (!ent.isIntersecting) {
+      header.classList.add("sticky");
+      sectionHero.style.marginTop = "9.6rem";
+    } else {
+      header.classList.remove("sticky");
+      sectionHero.style.marginTop = "0rem";
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-160px",
+  }
+);
+obs.observe(sectionHero);
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
