@@ -359,6 +359,10 @@
     grid-row: 5;
   }
 
+  .testimonials-container {
+    padding: 4.8rem;
+  }
+
   .testimonials {
     grid-template-columns: 1fr;
     row-gap: 6.2rem;
