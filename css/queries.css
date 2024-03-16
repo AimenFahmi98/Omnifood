@@ -21,12 +21,21 @@
 
   .testimonials {
     grid-template-columns: 1fr;
-    row-gap: 9.6rem;
+    row-gap: 8rem;
+    margin-top: 2.4rem;
   }
 
   .testimonial-img {
     width: 6.8rem;
     margin-bottom: 1.6rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 59fr 41fr;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 0rem 9.6rem 9.6rem;
   }
 }
 
@@ -142,6 +151,7 @@
 
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
 
   .main-nav {
